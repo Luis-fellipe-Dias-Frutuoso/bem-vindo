@@ -1,4 +1,3 @@
-/* Estilos comuns para ambos PC e celular */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -48,12 +47,62 @@ section:hover {
     margin: 20px;
 }
 
+#projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projeto {
+    width: 100%; /* Alterado para 100% em dispositivos móveis */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.projeto:hover {
+    background-color: #646464;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10% 10% 10% 10%;
+    box-shadow: 3px 3px 6px #888888;
+    transition: 0.2s;
+}
+
+.projeto img:hover {
+
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
 h2 {
     text-align: center;
     display: block;
 }
 
-duda {
+.pepa {
+    display: block;
+    text-align: center;
+    width: 100%; /* Alterado para 100% em dispositivos móveis */
+    margin: 0 auto;
+}
+
+.duda {
     text-align: center;
     height: 200px;
     background-image: url('img/Captura de tela 2023-10-30 230230.png');
@@ -64,7 +113,7 @@ duda {
     transition: background-color 0.3s;
 }
 
-duda:hover {
+.duda:hover {
     background-color: #d65d5d;
 }
 
@@ -92,20 +141,18 @@ nav {
     color: #fff;
 }
 
-search {
+.search {
     display: flex;
     align-items: center;
 }
 
-/* Limitar a largura máxima da barra de pesquisa em dispositivos móveis */
-search input {
-    max-width: 150px;
+.search input {
     padding: 5px;
     border: none;
     border-radius: 5px;
 }
 
-search button {
+.search button {
     background-color: #0074D9;
     color: #fff;
     border: none;
@@ -118,7 +165,7 @@ a {
     text-decoration: none;
 }
 
-matematica3 {
+#matematica3 {
     background-image: url('img/download (1).jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,7 +173,7 @@ matematica3 {
     text-decoration: none;
 }
 
-portugues {
+#portugues {
     background-image: url('portugues.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,51 +181,19 @@ portugues {
     text-decoration: none;
 }
 
-/* Estilos específicos para dispositivos móveis (max-width: 768px) */
+/* Adicione uma media query para dispositivos móveis */
 @media (max-width: 768px) {
-    /* Aplique estilos específicos para dispositivos móveis aqui */
     header {
         padding: 15px;
     }
 
-    projeto {
+    .projeto {
         width: 100%;
     }
 
-    pepa {
+    .pepa {
         width: 100%;
     }
-}
-
-/* Estilos específicos para PCs (min-width: 769px) */
-@media (min-width: 769px) {
-    /* Aplique estilos específicos para PCs aqui */
-    #projetos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    projeto {
-        width: 30%;
-        padding: 15px;
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        transition: transform 0.3s;
-    }
-
-    projeto:hover {
-        background-color: #646464;
-        color: #fff;
-        transform: scale(1.05);
-    }
-
-    projeto img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10% 10% 10% 10%;
-        box-shadow: 3px 3px 6px #888888;
-        transition: 0.2s;
-    }
+      .search input {
+        max-width: 100%; /* Defina a largura máxima para 100% em dispositivos móveis */
 }
