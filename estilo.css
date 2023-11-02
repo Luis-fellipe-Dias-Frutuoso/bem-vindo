@@ -147,18 +147,10 @@ nav {
 }
 
 .search input {
+    max-width: 70px; /* Define uma largura máxima para a barra de pesquisa */
     padding: 5px;
     border: none;
     border-radius: 5px;
-}
-
-.search button {
-    background-color: #0074D9;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10px;
-    cursor: pointer;
 }
 
 a {
